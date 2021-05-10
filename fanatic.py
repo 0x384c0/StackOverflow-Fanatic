@@ -20,6 +20,7 @@ try:
     driver.find_element_by_xpath('//a[contains(@class,"my-profile")]').click()
     time.sleep(5)
     driver.get('https://stackoverflow.com/users/logout')
+    driver.find_element_by_xpath('//*[@id="content"]/div/form/div[2]/button').click()
     time.sleep(5)
 except Exception as e:
     try: 
