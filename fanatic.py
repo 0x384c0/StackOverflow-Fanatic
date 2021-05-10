@@ -19,6 +19,8 @@ try:
     time.sleep(2)
     driver.find_element_by_xpath('//a[contains(@class,"my-profile")]').click()
     time.sleep(5)
+    driver.get('https://stackoverflow.com/users/logout')
+    time.sleep(5)
 except Exception as e:
     try: 
         driver.quit()
