@@ -23,8 +23,5 @@ jobs:
         env:
           SO_USERNAME: ${{ secrets.SO_USERNAME }}
           SO_PASSWORD: ${{ secrets.SO_PASSWORD }}
-        with:
-          max_attempts: "3"
-          retry_wait_seconds: "360"
-          command: python fanatic.py
+        run: python fanatic.py
 
