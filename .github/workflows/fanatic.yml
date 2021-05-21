@@ -23,5 +23,11 @@ jobs:
         env:
           SO_USERNAME: ${{ secrets.SO_USERNAME }}
           SO_PASSWORD: ${{ secrets.SO_PASSWORD }}
-        run: python fanatic.py
+        with:
+          timeout_minutes: 60
+          max_attempts: 3
+          retry_wait_seconds: 120
+          retry_on: error
+          command: |
+            python fanatic.py
 
