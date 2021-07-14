@@ -12,6 +12,7 @@ StackOverflow crowns users with a 'Fanatic Badge' if you log into your account f
 
 Once these steps are complete, GitHub Actions will take care of the rest. Currently, the script is configured to run daily @ 13:07 UTC. If you'd like, you can change what time it will run by modifying the `.github/workflows/fanatic.yml` file. Don't forget to disable the Action once you've received your Fanatic Badge.
 
-update 15.03.21
-update 08.04.21
-update 021.05.21
+* update 15.03.21
+* update 08.04.21
+* update 21.05.21
+* update 14.07.21
